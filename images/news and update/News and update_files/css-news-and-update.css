@@ -1,0 +1,39 @@
+/* External font */
+@font-face {
+    font-family: Bogle Bold;
+    src: url(font/bogle-cufonfonts/BOGLEBOLD.OTF);
+}
+
+@font-face {
+    font-family: Bogle Regular;
+    src: url(font/bogle-cufonfonts/BOGLEREGULAR.OTF);
+}
+
+@font-face {
+    font-family: Bogle Italic;
+    src: url(font/bogle-cufonfonts/BOGLEITALIC.OTF);
+}
+
+
+/* Font Bold, Regular, Italic Class */
+.bogleReg {
+    font-family: Bogle Regular;
+}
+
+.bogleBold {
+    font-family: Bogle Bold;
+}
+
+.bogleItalic {
+    font-family: Bogle Italic;
+}
+
+
+
+.container-fluid {
+    background-image: url("walmart home page/images/news and update/News-and-update-banner.png");
+    background-color: green;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,131 @@
+/* External font */
+@font-face {
+    font-family: Bogle Bold;
+    src: url(font/bogle-cufonfonts/BOGLEBOLD.OTF);
+}
+
+@font-face {
+    font-family: Bogle Regular;
+    src: url(font/bogle-cufonfonts/BOGLEREGULAR.OTF);
+}
+
+@font-face {
+    font-family: Bogle Italic;
+    src: url(font/bogle-cufonfonts/BOGLEITALIC.OTF);
+}
+
+
+/* Font Bold, Regular, Italic Class */
+.bogleReg {
+    font-family: Bogle Regular;
+}
+
+.bogleBold {
+    font-family: Bogle Bold;
+}
+
+.bogleItalic {
+    font-family: Bogle Italic;
+}
+
+.form-control {
+    width: 400px !important;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+h1 {
+    text-align: center;
+  }
+  
+  .hover-containe {
+    position: relative;
+    background: #000000;
+    color: #ffffff;
+    margin: 20px auto;
+    text-align: center;
+    height: 60px;
+    width: 400px;
+    overflow: hidden;
+  }
+  
+  .hover {
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      background: #fff000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      animation-name: fadeFromtop;
+      -webkit-animation-name: fadeFromtop;
+      animation-duration: 800ms;
+      -webkit-animation-duration: 800ms;
+      animation-timing-function: ease-out;
+      -webkit-animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+  }
+  
+  .hover a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .name:hover .hover {
+    animation-name: fadeFromBottom;
+    -webkit-animation-name: fadeFromBottom;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+  
+  
+  
+  @keyframes fadeFromBottom  {
+          0%{
+              opacity:0;
+              -webkit-transform: translateY(100%);
+              -moz-transform: translateY(100%);
+              -ms-transform: translateY(100%);
+              -o-transform: translateY(100%);
+              transform: translateY(100%);
+          }
+          100%{
+              opacity: 1;
+              -webkit-transform: translateY(0px);
+              -moz-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+              -o-transform: translateY(0px);
+              transform: translateY(0px);
+              display: block;
+          }
+      }
+  @keyframes fadeFromtop  {
+      0%{
+          opacity:1;
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          -o-transform: translateY(0px);
+          transform: translateY(0px);
+      }
+      100%{
+          opacity: 0;
+          -webkit-transform: translateY(100%);
+          -moz-transform: translateY(100%);
+          -ms-transform: translateY(400%);
+          -o-transform: translateY(100%);
+          transform: translateY(100%);
+      }
+  }

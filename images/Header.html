@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/header.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./Header_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="./Header_files/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+     
+    <!-- CSS Link -->
+        <link rel="stylesheet" href="./Header_files/css-header.css">
+
+
+    <title>Header</title>
+</head>
+<body cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="">
+    
+    <!-- <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"><img src="walmart home page/images/logo-walmart.png" alt=""></a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+    </nav> -->
+
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul class="bogleReg p-0 m-0 mt-5">
+            <li> <a href="http://127.0.0.1:5500/header.html#">About us</a> </li>
+                <li> <a href="http://127.0.0.1:5500/header.html#">MSME growth journey</a> </li>
+                    <li> <a href="http://127.0.0.1:5500/header.html#">Success Stories</a> </li>
+                        <li>  <a href="http://127.0.0.1:5500/header.html#">Webinars </a> </li> 
+                            <li> <a href="http://127.0.0.1:5500/header.html#">News and updates </a> </li>
+                                <li><a href="http://127.0.0.1:5500/header.html#">Contact us </a> </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+       <!-- JS -->
+    <script src="./Header_files/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="./Header_files/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+
+        document.onclick = function(e) {
+             if(e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+             }
+        }
+
+        
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active')
+        }
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<div id="LinkCheckrOverlay"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,284 @@
+/* External font */
+@font-face {
+    font-family: Bogle Bold;
+    src: url(font/bogle-cufonfonts/BOGLEBOLD.OTF);
+}
+
+@font-face {
+    font-family: Bogle Regular;
+    src: url(font/bogle-cufonfonts/BOGLEREGULAR.OTF);
+}
+
+@font-face {
+    font-family: Bogle Italic;
+    src: url(font/bogle-cufonfonts/BOGLEITALIC.OTF);
+}
+
+
+/* Font Bold, Regular, Italic Class */
+.bogleReg {
+    font-family: Bogle Regular;
+}
+
+.bogleBold {
+    font-family: Bogle Bold;
+}
+
+.bogleItalic {
+    font-family: Bogle Italic;
+}
+
+.img-fluid {
+    width: 100%; 
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* All Section main Heading */
+.main-head {
+    font-family: Bogle Bold;
+    font-size: 32px;
+    color: #2F6EB5 ;
+}
+
+/* Program Benefits CSS */
+img {
+    vertical-align: none !important;
+    border-style: none;
+}
+
+.pb-heading {
+    font-size: 18px;
+    font-family: Bogle Bold; 
+    color:#fff;
+    font-weight: bold;
+}
+
+.program-benefits:hover {
+    transform: scale(1.1);
+}  /* END - Program Benefits */
+
+
+/*  6 Simple Steps 
+    hover to show paragraph
+      */
+.hide {
+    display: none;
+    position: absolute;
+  }
+      
+.myDIV:hover + .hide {
+    display: block;
+    color: red;
+}
+.show-text{
+    display: block;
+}
+
+
+
+/* ARC*/
+
+/* Common font-family  */
+
+.hidden-para {
+    font-family: Bogle Regular;
+    font-size: 16px;
+}
+
+.arc-side-head {
+    font-family: Bogle Bold;
+    font-size: 21px;
+}
+
+/* Arc 3 */
+.custom-shape-3{
+    border-radius: 90% 0% 96% 0% / 60% 0% 60% 8%;
+    z-index: 7;
+    /* background: yellow; */
+    margin-right: -19px;
+}
+.arc-heading-3 {
+    margin-top: -72px;
+    margin-left: 154px;
+}
+.arc-heading-3 h2 {
+    color: #3B97CA;
+    position: absolute;
+    font-size: 21px;
+}
+.arc-para-3{
+    margin-top: -40px;
+    margin-left: 103px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Arc 4 */
+.custom-shape-4 {
+    border-radius: 0% 90% 62% 90% / 0 84% 70% 80%;
+        z-index: 6;
+        /* background: green; */
+        margin-top: -5px;
+}
+.arc-heading-4 {
+    margin-top: -68px;
+    margin-right: 335px;
+}
+.arc-heading-4 h2 {
+    color: #3CC2CE;
+    position: absolute;
+    font-size: 21px;
+}
+.arc-para-4{
+    margin-left: 200px;
+    margin-top: -38px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+/* Arc 2 */
+.custom-shape-2 {
+    z-index: 8;
+    /* background: purple; */
+    margin-top: -100px;
+    margin-left: 108px;
+}
+.arc-heading-2 {
+    position: absolute;
+    margin-left: -290px;
+    margin-top: -85px;
+}
+.arc-heading-2 h2 {
+    font-size: 21px;
+    color: #3B72C4;
+}
+.arc-para-2 {
+    margin-left: -290px;
+    margin-top: -50px;
+    text-align: center;
+}
+
+
+
+/* Arc 5 */
+.custom-shape-5 {
+    z-index: 6;
+    /* background: orange; */
+    margin-top: -101px;
+    margin-right: 83px;
+}
+.arc-heading-5 {
+    margin-top: -85px;
+}
+.arc-heading-5 h2 {
+    position: absolute;
+    font-size: 21px;
+    margin-left: -36px;
+    color: #3FC497;
+}
+.arc-para-5 {
+    font-size: 16px;
+    margin-top: -50px;
+    margin-left: 370px;
+    text-align: center;
+}
+
+
+/* Arc 1 */
+.custom-shape-1 {
+    z-index: 9;
+    margin-top: -31px;
+    margin-left: 55px;
+}
+.arc-heading-1 h2 {
+    position: absolute;
+    margin-left: -150px;
+    font-size: 21px;
+    color: #4A4AAE;
+}
+.arc-para-1 {
+    margin-right: 401px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* Arc 6 */
+.custom-shape-6 {
+    z-index: 5;
+    margin-top: -29px;
+    margin-right: 32px;
+}
+.arc-heading-6 h2 {
+    position: absolute;
+    color: #7EAC30;
+    font-size: 21px;
+    margin-left: 60px;
+}
+.arc-para-6 {
+    text-align: center;
+    margin-left: 468px;
+    margin-top: 30px;
+}
+
+
+/* Your growth journey with Walmart Vriddhi CSS*/
+.growth {
+    background-color: #1471CE;
+}
+.growth h2 {
+    font-size: 21px;
+    padding: 20px;
+    padding-left: 30px;
+    color: #fff;
+    line-height: 30px;
+    font-family: Bogle Bold;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.grow-image-1 {
+    margin-top: 60px;
+}
+
+.grow-image-3 {
+    margin-top: -60px;
+}
+.enterprise{
+    padding-bottom: 76px;
+}
+.exports {
+    padding-bottom: 136px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+
+/* Search bar icon */
+/* .form-control {
+    background-image: url('walmart home page/images/search-icon.svg');
+    background-position: right center 5px;
+  } */
+
+
+
+
+
+
+
+

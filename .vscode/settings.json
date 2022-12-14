@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.editor.labelFormat": "default",
+    "html.format.indentInnerHtml": true,
+    "json.format.keepLines": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+   
+}

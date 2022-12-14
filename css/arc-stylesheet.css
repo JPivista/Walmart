@@ -1,0 +1,22 @@
+.column {
+    width: 50%;
+    float: left;
+}
+
+
+.left-side-text-3 {
+    /* width: 50%; */
+}
+.left-img-3 {
+    text-align: right;
+    margin-right: -20px;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.left-img-4 {
+    z-index: 0;
+}
+.arc-3 {
+    z-index: 10;
+}
