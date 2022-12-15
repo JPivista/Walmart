@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* External font */
+@font-face {
+    font-family: Bogle Bold;
+    src: url(font/bogle-cufonfonts/BOGLEBOLD.OTF);
+}
+
+@font-face {
+    font-family: Bogle Regular;
+    src: url(font/bogle-cufonfonts/BOGLEREGULAR.OTF);
+}
+
+@font-face {
+    font-family: Bogle Italic;
+    src: url(font/bogle-cufonfonts/BOGLEITALIC.OTF);
+}
+
+
+.custom-form {
+    border: 1px solid #B8B8B8;
+    font-family: Bogle Regular;
+    padding-left: 25px !important;
+}
+
+.custom-checkbox {
+    border: 1px solid #B8B8B8;
+    font-family: Bogle Regular;
+    padding-left: 25px !important;
+    padding-right: 20px;
+}
