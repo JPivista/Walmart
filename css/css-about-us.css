@@ -28,6 +28,10 @@
     font-family: Bogle Italic;
 }
 
+
+
+
+
 .form-control {
     width: 400px !important;
 }
@@ -38,94 +42,120 @@
 
 h1 {
     text-align: center;
-  }
-  
-  .hover-containe {
-    position: relative;
-    background: #000000;
-    color: #ffffff;
-    margin: 20px auto;
+}
+
+.hide-text   {
+    display: none;
     text-align: center;
-    height: 60px;
-    width: 400px;
-    overflow: hidden;
+}
+
+.custom-text {
+    font-size: 20px !important;
+
+}
+
+.hover-container:hover .hide-text {
+    display: block;
+    /* background-color: blue; */
+    color: white;
+}
+
+.hover-container {
+    background: white; 
+    height: 350px; width: 23%;
+}
+
+.hover-container:hover {
+    /* background-color: blue; */
+    padding: 3px;
+}
+
+.hover-container:hover .img-hide {
+    display: none;
+}
+
+
+
+/* Sweep Animation */ 
+
+
+
+/* Sweep To Right */
+
+
+.hover-container {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    /* background: blue; */
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;  
   }
-  
-  .hover {
-    display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 14px;
-      background: #fff000;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      animation-name: fadeFromtop;
-      -webkit-animation-name: fadeFromtop;
-      animation-duration: 800ms;
-      -webkit-animation-duration: 800ms;
-      animation-timing-function: ease-out;
-      -webkit-animation-timing-function: ease-out;
-      animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
+  .hover-container:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: blue;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
   }
-  
-  .hover a {
-    color: #000000;
-    text-decoration: none;
+  .hover-container:hover, .hover-container:focus, .hover-container:active {
+    color: white;
   }
-  
-  .name:hover .hover {
-    animation-name: fadeFromBottom;
-    -webkit-animation-name: fadeFromBottom;
-    animation-duration: 800ms;
-    -webkit-animation-duration: 800ms;
-    animation-timing-function: ease-in;
-    -webkit-animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+  .hover-container:hover:before, .hover-container:focus:before, .hover-container:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
   }
-  
-  
-  
-  @keyframes fadeFromBottom  {
-          0%{
-              opacity:0;
-              -webkit-transform: translateY(100%);
-              -moz-transform: translateY(100%);
-              -ms-transform: translateY(100%);
-              -o-transform: translateY(100%);
-              transform: translateY(100%);
-          }
-          100%{
-              opacity: 1;
-              -webkit-transform: translateY(0px);
-              -moz-transform: translateY(0px);
-              -ms-transform: translateY(0px);
-              -o-transform: translateY(0px);
-              transform: translateY(0px);
-              display: block;
-          }
-      }
-  @keyframes fadeFromtop  {
-      0%{
-          opacity:1;
-          -webkit-transform: translateY(0px);
-          -moz-transform: translateY(0px);
-          -ms-transform: translateY(0px);
-          -o-transform: translateY(0px);
-          transform: translateY(0px);
-      }
-      100%{
-          opacity: 0;
-          -webkit-transform: translateY(100%);
-          -moz-transform: translateY(100%);
-          -ms-transform: translateY(400%);
-          -o-transform: translateY(100%);
-          transform: translateY(100%);
-      }
+
+/* .hover-container {
+    padding: 20px;
+    background: lightgrey;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition: color 0.3s;
   }
+  .hover-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: blue;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease-out;
+  }
+  .hover-container:hover:hover {
+    color: white;
+  }
+  .hover-container:hover:before {
+    transform: scaleY(1);
+  } */
+
+
