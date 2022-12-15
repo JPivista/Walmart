@@ -62,7 +62,8 @@ h1 {
 
 .hover-container {
     background: white; 
-    height: 350px; width: 23%;
+    height: 350px; 
+    width: 23%;
 }
 
 .hover-container:hover {
@@ -80,7 +81,7 @@ h1 {
 
 
 
-/* Sweep To Right */
+/* Sweep To Top */
 
 
 .hover-container {
@@ -97,8 +98,7 @@ h1 {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    /* background: blue; */
-    padding: 8px 15px;
+    /* padding: 8px 15px; */
     color: #fff;
     text-decoration: none;  
   }
@@ -113,7 +113,7 @@ h1 {
     background: blue;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
+    /* -webkit-transform-origin: 50% 100%; */
     transform-origin: 50% 100%;
     -webkit-transition-property: transform;
     transition-property: transform;
@@ -121,9 +121,12 @@ h1 {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    
+    
   }
   .hover-container:hover, .hover-container:focus, .hover-container:active {
     color: white;
+    
   }
   .hover-container:hover:before, .hover-container:focus:before, .hover-container:active:before {
     -webkit-transform: scaleY(1);
@@ -148,7 +151,7 @@ h1 {
     z-index: -1;
     background: blue;
     transform: scaleX(0);
-    transform-origin: 0 50%;
+    transform-origin: 50% 50%;
     transition: transform 0.3s ease-out;
   }
   .hover-container:hover:hover {
