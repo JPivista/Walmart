@@ -1,17 +1,17 @@
 /* External font */
 @font-face {
     font-family: Bogle Bold;
-    src: url(font/bogle-cufonfonts/BOGLEBOLD.OTF);
+    src: url(/font/bogle-cufonfonts/BOGLEBOLD.OTF);
 }
 
 @font-face {
     font-family: Bogle Regular;
-    src: url(font/bogle-cufonfonts/BOGLEREGULAR.OTF);
+    src: url(/font/bogle-cufonfonts/BOGLEREGULAR.OTF);
 }
 
 @font-face {
     font-family: Bogle Italic;
-    src: url(font/bogle-cufonfonts/BOGLEITALIC.OTF);
+    src: url(/font/bogle-cufonfonts/BOGLEITALIC.OTF);
 }
 
 

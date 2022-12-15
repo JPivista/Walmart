@@ -31,9 +31,13 @@
 
 
 .bg-banner {
-    background-image: url("walmart home page/images/news and update/News-and-update-banner.png");
+    background-image: url("/images/news and update/News-and-update-banner.png");
     background-color: green;
     height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
+    display: inline-flex;
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
 }
