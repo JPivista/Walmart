@@ -17,6 +17,167 @@
 
         
     <title>MSME Growth Journey</title>
+
+<style>
+
+.tabs {
+
+display: flex;
+
+position: relative;
+
+justify-content: center;
+
+}
+
+
+
+.tabs .line {
+
+position: absolute;
+
+left: 0;
+
+bottom: 0;
+
+width: 0;
+
+height: 3px;
+
+border-radius: 0px;
+
+background-color: #fdbd01;
+
+transition: all 0.2s ease;
+
+}
+
+
+
+.tab-item {
+
+min-width: 240px;
+
+padding: 0px 27px 0px 27px;
+
+font-size: 20px;
+
+text-align: center;
+
+color: #000;
+
+background-color: #eaeaea;
+
+/*border-top-left-radius: 5px;*/
+
+/*border-top-right-radius: 5px;*/
+
+border-bottom: 5px solid transparent;
+
+opacity: 0.6;
+
+cursor: pointer;
+
+transition: all 0.5s ease;
+
+flex-direction: column;
+
+align-items: center;
+
+display: flex;
+
+}
+
+
+
+.img {
+
+width: 100px;
+
+/*position: relative;*/
+
+/*top: 2px;*/
+
+}
+
+
+
+.tab-item:hover {
+
+opacity: 1;
+
+background-color: rgba(194, 53, 100, 0.05);
+
+border-color: rgba(194, 53, 100, 0.1);
+
+}
+
+
+
+.tab-item.active {
+
+opacity: 1;
+
+background-color: #fff;
+
+}
+
+
+
+.arrow {
+
+position: absolute;
+
+width: 0;
+
+height: 0;
+
+border-left: 20px solid transparent;
+
+border-right: 20px solid transparent;
+
+border-top: 20px solid #f00;
+
+}
+
+
+
+.tab-content {
+
+padding: 0px 0;
+
+}
+
+
+
+.tab-pane {
+
+color: #333;
+
+display: none;
+
+}
+
+
+
+.tab-pane.active {
+
+display: block;
+
+}
+
+
+
+.tab-pane h2 {
+
+font-size: 24px;
+
+margin-bottom: 8px;
+
+} 
+</style>
+
+
 </head>
 <body>
 
@@ -68,56 +229,52 @@
                     ‘Make-in-India’ as well as enable their offline and online growth by becoming part of local <br>
                     and global supply chains.</p>
                 
-            <ul class="nav nav-tabs justify-content-center mx-5 border-0">
-                <li class="nav-item">  
-                        <a class="nav-link active border-0" data-bs-toggle="tab" href="#learn">
-                            <img src="/images/Msme_growth_journey/Learning-icon.svg" height="100px" alt="">
-                            <h2 class="bogleBold" style="font-size:20px">Learning</h2>
-                        </a>
-                </li>
+     
 
-                <li class="nav-item">
-                        <a class="nav-link border-0" data-bs-toggle="tab" href="#personalized">
-                            <img src="/images/Msme_growth_journey/Personalized-Mentoring-icon.svg" height="100px" alt="">
-                            <h2 class="bogleBold text-white" style="font-size:20px">Personalized Mentoring</h2>
-                        </a>
-                </li>
+<div class="tabs">
+    <div class="tab-item active">
+            <img src="/images/Msme_growth_journey/Learning-icon.svg" height="100px" alt="">
+            <h2 class="bogleBold" style="font-size:20px">Learning</h2>
+    </div>
+    
+    <div class="tab-item">
+            <img src="/images/Msme_growth_journey/Personalized-Mentoring-icon.svg" height="100px" alt="">
+            <h2 class="bogleBold" style="font-size:20px">Personalized Mentoring</h2>
+    </div>
 
-                <li class="nav-item">
-                    <a class="nav-link border-0" data-bs-toggle="tab" href="#market">
-                        <img src="/images/Msme_growth_journey/Market-Connect-icon.svg" height="100px" alt="">
-                        <h2 class="bogleBold" style="font-size:20px">Market Connect</h2>
-                    </a>
-                </li>
-            </ul>
+    <div class="tab-item">
+            <img src="/images/Msme_growth_journey/Market-Connect-icon.svg" height="100px" alt="">
+            <h2 class="bogleBold" style="font-size:20px">Market Connect</h2>
+    </div>
+<div class="line"></div>
+</div>
+
+
+
+
+
+
     </div>
     <div class="container">
-        <div class="tab-content bg-white">
-            <div class="tab-pane active" id="learn">
-                <div class="flex-column text-center mx-0 px-0">
-                    <h2>Learning</h2>
-                    <img src="/images/line-svg-png-1.png" alt="" >
-                    <p class="bogleReg">
-                        The Walmart Vriddhi learning program equips you with tailored support to help you unlock <br>
-                        your growth potential. It provides you with interactive virtual learning experiences <br>
-                        through the mobile app available on iOS and Android, in English, Hindi and Tamil.
-
-                    </p>
+       <div class="tab-content">
+            <!-- Learnig  -->
+            <div class="tab-pane active">
+                <div class="d-flex justify-content-center">
+                    tab-1
                 </div>
+
             </div>
 
-            <div class="tab-pane" id="personalized">
-                <div class="row">
-                        <h2>Personalized Mentoring</h2>
-                </div>
+            <!-- Personalized Mentoring -->
+            <div class="tab-pane">tab-2
+
             </div>
 
-            <div class="tab-pane" id="market">
-                <div class="row">
-                    <h2>Market Connect</h2>
-                </div>
+            <!-- Market Connect -->
+            <div class="tab-pane">tab-3
+
             </div>
-        </div>
+       </div>
     </div>
 
    
@@ -184,8 +341,68 @@
 
     <!-- Script -->
     <script src="js/header-script.js"></script>
+    <script src="js/msme.js"></script>
     
+<script>
 
+const $ = document.querySelector.bind(document);
+
+const $$ = document.querySelectorAll.bind(document);
+
+
+
+const tabs = $$(".tab-item");
+
+const panes = $$(".tab-pane");
+
+
+
+const tabActive = $(".tab-item.active");
+
+const line = $(".tabs .line");
+
+
+
+requestIdleCallback(function () {
+
+    line.style.left = tabActive.offsetLeft + "px";
+
+    line.style.width = tabActive.offsetWidth + "px";
+
+
+
+});
+
+
+
+tabs.forEach((tab, index) => {
+
+    const pane = panes[index];
+
+
+
+    tab.onclick = function () {
+
+        $(".tab-item.active").classList.remove("active");
+
+        $(".tab-pane.active").classList.remove("active");
+
+
+
+        line.style.left = this.offsetLeft + "px";
+
+        line.style.width = this.offsetWidth + "px";
+
+
+
+        this.classList.add("active");
+
+        pane.classList.add("active");
+
+    };
+
+});
+</script>
 
 </body>
 </html>

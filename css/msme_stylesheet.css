@@ -40,3 +40,18 @@
 .nav-link {
     width: 300px;
 }
+
+/* .nav-item:active {
+    color: orange;
+} */
+
+.nav-item:hover {
+    /* color: green; */
+    background:#0064B7 ;
+}
+
+ .nav-item .a .active {   
+    background: black;
+    color: white;  
+    border: 10px solid orange;
+  }  
